@@ -11,5 +11,6 @@ module.exports.handler = (event, context, callback) => {
             input: event,
         }),
     };
+    console.log('event : ', event);
     callback(null, res);
 };
