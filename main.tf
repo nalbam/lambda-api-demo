@@ -10,6 +10,7 @@ terraform {
     bucket = "terraform-nalbam-seoul"
     key = "demo-api.tfstate"
   }
+  required_version = "> 0.11.0"
 }
 
 module "domain" {
