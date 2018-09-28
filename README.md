@@ -1,1 +1,1 @@
-# lambda-demo
+# lambda-api-demo
