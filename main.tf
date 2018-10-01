@@ -38,6 +38,8 @@ module "dev-api-demo" {
   certificate_arn = "${module.domain.certificate_arn}"
   domain_name     = "${var.stage}-${var.name}.${var.domain}"
 
+  dynamodb = "true"
+
   env_vars = {
     PROFILE = "${var.stage}"
   }
