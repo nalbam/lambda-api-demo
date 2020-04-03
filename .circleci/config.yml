@@ -52,7 +52,7 @@ workflows:
       - approval:
           type: approval
           requires:
-            - test
+            - plan
       - apply:
           requires:
             - approval
