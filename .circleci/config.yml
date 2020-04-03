@@ -49,6 +49,10 @@ workflows:
       - test:
           requires:
             - build
-      - deploy:
+      - approval:
+          type: approval
           requires:
             - test
+      - deploy:
+          requires:
+            - approval
